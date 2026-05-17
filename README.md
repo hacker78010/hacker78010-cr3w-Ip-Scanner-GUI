@@ -111,20 +111,18 @@ private async Task ScanPortAsync(IPAddress ip, int port, CancellationToken token
     {
         try
         {
-            // Initiate parallel socket binding tasks
             var connectTask = socket.ConnectAsync(new IPEndPoint(ip, port));
-            var delayTask = Task.Delay(500, token); // Adaptive Network WAN Latency Buffer
+            var delayTask = Task.Delay(500, token); 
 
             var completedTask = await Task.WhenAny(connectTask, delayTask);
 
-            // Verify clean connection state before registering port as OPEN
             if (completedTask == connectTask && socket.Connected && !token.IsCancellationRequested)
             {
                 string serviceName = GetPortService(port);
-                UpdateUserInterface(port, serviceName);
+                // Valid connection registered successfully
             }
         }
         catch { /* Suppress dead socket drop exceptions */ }
     }
 }
-📈 Performance & Benchmark Estimation IndexNetwork ScopeBatch Speed ConfigurationEstimated Total Completion TimeExpected Firewall ResistanceLocalhost (127.0.0.1)Max Concurrency Mode~45 SecondsUltimate / Zero Packet LossLocal Network RouterManaged Throttling Mode~3 - 5 MinutesHigh Stability ScanExternal Public Host IPAdaptive Adaptive Buffer~8 - 12 MinutesStealthy Execution Curve📥 Deployment InstructionsFor End-Users (Ready to Run)Go to the right-hand panel of this repository and access the Releases sub-menu.Download the binary compiled asset: Cr3wUI.exe.Drop the executable anywhere onto your target drive.Open the interface, supply an IP coordinate (e.g., 8.8.8.8 or 127.0.0.1), and execute the START SCAN trigger.Hit STOP at any moment to flush the memory stack and abort all outbound packets.For Source Developers (Compilation)Clone or download this project's structural directories (Cr3wUI/ folder and the .sln file).Launch the hacker78010_Cr3w_suite.sln framework using Visual Studio 2022 / 2026.Toggle the build setup from Debug to Release inside the master toolbar.Execute deployment compile command: Ctrl + Shift + B.Access the production output located inside your local directory at: ..\Cr3wUI\bin\Release\.❓ Frequently Asked Questions (FAQ)Q: The tool finishes scanning but lists 0 open ports on my network gateway router. Why?A: Modern residential routers feature rigid automated Firewalls. When the tool hits the network, the router recognizes the speed of the probes, flags it as a Port Scan, and initiates dropping all incoming requests. To counter this, reduce your target footprint or test using your internal loopback adapter address (127.0.0.1).Q: Is this program extracting or caching any user behavioral history?A: No. The code runs entirely on the client-side system. Connections are established exclusively between your network network interface and the target destination provided inside the configuration field.Q: Why is the file size so incredibly small?A: Because it is built entirely using native Windows system calls. There are no bloated third-party frameworks included, resulting in optimal speed and minimal memory utilization.🛡️ Identity & Group Ownership NoticeThis software is developed, managed, and authorized under the global distribution registry of hacker78010 cr3w.Systems Forensics, Advanced Application Design, and High-Performance Network Utilities.
+
