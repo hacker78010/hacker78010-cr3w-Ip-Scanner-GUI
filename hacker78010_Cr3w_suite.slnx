@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="../Cr3wEngine/Cr3wEngine.vcxproj" Id="1dc654f9-61ba-4e11-b276-2f3c78bba34f" />
+  <Project Path="Cr3wUI/Cr3wUI.csproj" Id="94336e17-c3cb-454f-8053-e4616f841afb" />
+</Solution>

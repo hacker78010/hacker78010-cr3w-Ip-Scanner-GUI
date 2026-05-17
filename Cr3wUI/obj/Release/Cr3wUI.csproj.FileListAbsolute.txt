@@ -1,0 +1,10 @@
+C:\Users\ektor\source\repos\hacker78010_Cr3w_suite\Cr3wUI\bin\Release\Cr3wUI.exe.config
+C:\Users\ektor\source\repos\hacker78010_Cr3w_suite\Cr3wUI\bin\Release\Cr3wUI.exe
+C:\Users\ektor\source\repos\hacker78010_Cr3w_suite\Cr3wUI\bin\Release\Cr3wUI.pdb
+C:\Users\ektor\source\repos\hacker78010_Cr3w_suite\Cr3wUI\obj\Release\Cr3wUI.csproj.AssemblyReference.cache
+C:\Users\ektor\source\repos\hacker78010_Cr3w_suite\Cr3wUI\obj\Release\Cr3wUI.Form1.resources
+C:\Users\ektor\source\repos\hacker78010_Cr3w_suite\Cr3wUI\obj\Release\Cr3wUI.Properties.Resources.resources
+C:\Users\ektor\source\repos\hacker78010_Cr3w_suite\Cr3wUI\obj\Release\Cr3wUI.csproj.GenerateResource.cache
+C:\Users\ektor\source\repos\hacker78010_Cr3w_suite\Cr3wUI\obj\Release\Cr3wUI.csproj.CoreCompileInputs.cache
+C:\Users\ektor\source\repos\hacker78010_Cr3w_suite\Cr3wUI\obj\Release\Cr3wUI.exe
+C:\Users\ektor\source\repos\hacker78010_Cr3w_suite\Cr3wUI\obj\Release\Cr3wUI.pdb
